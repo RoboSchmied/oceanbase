@@ -182,8 +182,8 @@ int ObGeoExprUtils::construct_geometry(ObIAllocator &allocator,
                      func_name,
                      log_info.min_lat_val_,
                      log_info.max_lat_val_);
-    } else if (OB_ERR_GIS_DATA_WRONG_ENDIANESS == ret) {
-      LOG_USER_ERROR(OB_ERR_GIS_DATA_WRONG_ENDIANESS);
+    } else if (OB_ERR_GIS_DATA_WRONG_ENDIANNESS == ret) {
+      LOG_USER_ERROR(OB_ERR_GIS_DATA_WRONG_ENDIANNESS);
     }
   }
 

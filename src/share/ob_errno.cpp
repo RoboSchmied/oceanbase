@@ -20289,11 +20289,11 @@ static const _error _error_OB_ERR_BOOST_GEOMETRY_UNKNOWN_EXCEPTION = {
       .oracle_str_error      = "ORA-00600: Unknown exception thrown in function.",
       .oracle_str_user_error = "ORA-00600: Unknown exception thrown in function %s."
 };
-static const _error _error_OB_ERR_GIS_DATA_WRONG_ENDIANESS = {
-      .error_name            = "OB_ERR_GIS_DATA_WRONG_ENDIANESS",
+static const _error _error_OB_ERR_GIS_DATA_WRONG_ENDIANNESS = {
+      .error_name            = "OB_ERR_GIS_DATA_WRONG_ENDIANNESS",
       .error_cause           = "Internal Error",
       .error_solution        = "Contact OceanBase Support",
-      .mysql_errno           = ER_GIS_DATA_WRONG_ENDIANESS,
+      .mysql_errno           = ER_GIS_DATA_WRONG_ENDIANNESS,
       .sqlstate              = "HY000",
       .str_error             = "Geometry byte string must be little endian.",
       .str_user_error        = "Geometry byte string must be little endian.",
@@ -28477,7 +28477,7 @@ struct ObStrErrorInit
     _errors[-OB_ERR_BOOST_GEOMETRY_TURN_INFO_EXCEPTION] = &_error_OB_ERR_BOOST_GEOMETRY_TURN_INFO_EXCEPTION;
     _errors[-OB_ERR_BOOST_GEOMETRY_SELF_INTERSECTION_POINT_EXCEPTION] = &_error_OB_ERR_BOOST_GEOMETRY_SELF_INTERSECTION_POINT_EXCEPTION;
     _errors[-OB_ERR_BOOST_GEOMETRY_UNKNOWN_EXCEPTION] = &_error_OB_ERR_BOOST_GEOMETRY_UNKNOWN_EXCEPTION;
-    _errors[-OB_ERR_GIS_DATA_WRONG_ENDIANESS] = &_error_OB_ERR_GIS_DATA_WRONG_ENDIANESS;
+    _errors[-OB_ERR_GIS_DATA_WRONG_ENDIANNESS] = &_error_OB_ERR_GIS_DATA_WRONG_ENDIANNESS;
     _errors[-OB_ERR_ALTER_OPERATION_NOT_SUPPORTED_REASON_GIS] = &_error_OB_ERR_ALTER_OPERATION_NOT_SUPPORTED_REASON_GIS;
     _errors[-OB_ERR_BOOST_GEOMETRY_INCONSISTENT_TURNS_EXCEPTION] = &_error_OB_ERR_BOOST_GEOMETRY_INCONSISTENT_TURNS_EXCEPTION;
     _errors[-OB_ERR_GIS_MAX_POINTS_IN_GEOMETRY_OVERFLOWED] = &_error_OB_ERR_GIS_MAX_POINTS_IN_GEOMETRY_OVERFLOWED;

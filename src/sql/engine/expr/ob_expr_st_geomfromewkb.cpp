@@ -103,8 +103,8 @@ int ObExprPrivSTGeomFromEWKB::eval_st_geomfromewkb(const ObExpr &expr, ObEvalCtx
       ret = OB_ERR_GIS_INVALID_DATA;
       LOG_USER_ERROR(OB_ERR_GIS_INVALID_DATA, N_PRIV_ST_GEOMFROMEWKB);
     } else if (header.bo_ != ObGeoWkbByteOrder::LittleEndian) {
-      ret = OB_ERR_GIS_DATA_WRONG_ENDIANESS;
-      LOG_USER_ERROR(OB_ERR_GIS_DATA_WRONG_ENDIANESS);
+      ret = OB_ERR_GIS_DATA_WRONG_ENDIANNESS;
+      LOG_USER_ERROR(OB_ERR_GIS_DATA_WRONG_ENDIANNESS);
       LOG_WARN("invalid byte order", K(ret), K(header.bo_));
     } else if (OB_FAIL(ObGeoExprUtils::get_srs_item(session->get_effective_tenant_id(), srs_guard, header.srid_, srs))) {
       LOG_WARN("fail to get srs item", K(ret), K(header.srid_));

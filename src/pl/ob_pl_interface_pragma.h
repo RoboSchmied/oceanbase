@@ -279,7 +279,7 @@
   INTERFACE_DEF(INTERFACE_GET_SQL_HASH, "GETSQLHASH", (DbmsUtilityHelper::get_sql_hash))
   INTERFACE_DEF(INTERFACE_IS_BIT_SET, "IS_BIT_SET", (DbmsUtilityHelper::is_bit_set))
   INTERFACE_DEF(INTERFACE_CANONICALIZE, "CANONICALIZE", (DbmsUtilityHelper::canonicalize))
-  INTERFACE_DEF(INTERFACE_GET_ENDIANESS, "GET_ENDIAN", (DbmsUtilityHelper::get_endian))
+  INTERFACE_DEF(INTERFACE_GET_ENDIANNESS, "GET_ENDIAN", (DbmsUtilityHelper::get_endian))
   INTERFACE_DEF(INTERFACE_GET_HASH_VALUE, "GET_HASH_VALUE", (DbmsUtilityHelper::get_hash_value))
   INTERFACE_DEF(INTERFACE_GET_DB_VERSION, "GET_DB_VERSION", (DbmsUtilityHelper::get_db_version))
   INTERFACE_DEF(INTERFACE_GET_PORT_STRING, "GET_PORT_STRING", (DbmsUtilityHelper::get_port_string))

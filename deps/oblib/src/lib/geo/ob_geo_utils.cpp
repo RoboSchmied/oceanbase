@@ -387,11 +387,11 @@ int ObGeoTypeUtil::construct_geometry(ObIAllocator &allocator,
   uint32_t offset = 0;
   if (OB_FAIL(ObGeoTypeUtil::get_wkb_from_swkb(swkb, wkb, offset))) {
     // adapt mysql
-    ret = OB_ERR_GIS_DATA_WRONG_ENDIANESS;
+    ret = OB_ERR_GIS_DATA_WRONG_ENDIANNESS;
     LOG_WARN("fail to get wkb from swkb", K(ret), K(swkb));
   } else if (FALSE_IT(bo = static_cast<ObGeoWkbByteOrder>(*(data + offset)))) {
   } else if (ObGeoWkbByteOrder::LittleEndian != bo) {
-    ret = OB_ERR_GIS_DATA_WRONG_ENDIANESS;
+    ret = OB_ERR_GIS_DATA_WRONG_ENDIANNESS;
     LOG_WARN("invalid byte order", K(ret), K(bo));
   } else if (FALSE_IT(type = static_cast<ObGeoType>(ObGeoWkbByteOrderUtil::read<uint32_t>(
         data + offset + WKB_GEO_BO_SIZE, bo)))) {
